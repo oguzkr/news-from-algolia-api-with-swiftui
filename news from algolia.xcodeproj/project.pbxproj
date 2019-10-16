@@ -13,6 +13,10 @@
 		CAB2CCFA2356FB7500F6D4F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB2CCF92356FB7500F6D4F8 /* Assets.xcassets */; };
 		CAB2CCFD2356FB7500F6D4F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB2CCFC2356FB7500F6D4F8 /* Preview Assets.xcassets */; };
 		CAB2CD002356FB7500F6D4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB2CCFE2356FB7500F6D4F8 /* LaunchScreen.storyboard */; };
+		CAB2CD09235701A000F6D4F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB2CD08235701A000F6D4F8 /* NetworkManager.swift */; };
+		CAB2CD0B235702EE00F6D4F8 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB2CD0A235702EE00F6D4F8 /* PostData.swift */; };
+		CAD82D412357108200933E9F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD82D402357108200933E9F /* DetailView.swift */; };
+		CAD82D432357142200933E9F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD82D422357142200933E9F /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CAB2CCFC2356FB7500F6D4F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CAB2CCFF2356FB7500F6D4F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB2CD012356FB7500F6D4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB2CD08235701A000F6D4F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CAB2CD0A235702EE00F6D4F8 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		CAD82D402357108200933E9F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CAD82D422357142200933E9F /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,8 @@
 			children = (
 				CAB2CCF32356FB7400F6D4F8 /* AppDelegate.swift */,
 				CAB2CCF52356FB7400F6D4F8 /* SceneDelegate.swift */,
-				CAB2CCF72356FB7400F6D4F8 /* ContentView.swift */,
+				CAD82D3F2357106900933E9F /* Views */,
+				CAB2CD072357017F00F6D4F8 /* Models */,
 				CAB2CCF92356FB7500F6D4F8 /* Assets.xcassets */,
 				CAB2CCFE2356FB7500F6D4F8 /* LaunchScreen.storyboard */,
 				CAB2CD012356FB7500F6D4F8 /* Info.plist */,
@@ -73,6 +82,25 @@
 				CAB2CCFC2356FB7500F6D4F8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAB2CD072357017F00F6D4F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAB2CD08235701A000F6D4F8 /* NetworkManager.swift */,
+				CAB2CD0A235702EE00F6D4F8 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAD82D3F2357106900933E9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAB2CCF72356FB7400F6D4F8 /* ContentView.swift */,
+				CAD82D402357108200933E9F /* DetailView.swift */,
+				CAD82D422357142200933E9F /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB2CD0B235702EE00F6D4F8 /* PostData.swift in Sources */,
+				CAD82D412357108200933E9F /* DetailView.swift in Sources */,
+				CAB2CD09235701A000F6D4F8 /* NetworkManager.swift in Sources */,
 				CAB2CCF42356FB7400F6D4F8 /* AppDelegate.swift in Sources */,
 				CAB2CCF62356FB7400F6D4F8 /* SceneDelegate.swift in Sources */,
 				CAB2CCF82356FB7400F6D4F8 /* ContentView.swift in Sources */,
+				CAD82D432357142200933E9F /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
